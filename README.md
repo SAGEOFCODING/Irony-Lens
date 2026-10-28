@@ -142,7 +142,7 @@ The results in `reports/` are committed, so the tables and figures are available
 ## Working on the project together
 
 ```bash
-git clone https://github.com/<owner>/sarcasm-detection.git
+git clone https://github.com/aaryanve47-alt/sarcasm-detection.git
 cd sarcasm-detection
 python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
