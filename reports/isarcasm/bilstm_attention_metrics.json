@@ -1,12 +1,12 @@
 {
-  "accuracy": 0.6571,
-  "precision_sarcastic": 0.1841,
-  "recall_sarcastic": 0.405,
-  "f1_sarcastic": 0.2531,
-  "f1_macro": 0.5153,
-  "roc_auc": 0.5649,
+  "accuracy": 0.7159,
+  "precision_sarcastic": 0.1797,
+  "recall_sarcastic": 0.275,
+  "f1_sarcastic": 0.2174,
+  "f1_macro": 0.5219,
+  "roc_auc": 0.5162,
   "model": "bilstm_attention",
   "dataset": "isarcasm",
   "glove": false,
-  "best_val_f1_macro": 0.5784
+  "best_val_f1_macro": 0.574
 }

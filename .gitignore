@@ -1,5 +1,31 @@
-.venv/
+# Python bytecode & cache
 __pycache__/
+*.py[cod]
+*$py.class
+*.log
+.cache/
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Data & Heavy Model Weights (exceeds GitHub 100MB limit)
 data/
 models/
+*.pt
+*.joblib
+*.bin
+*.safetensors
+transformer_checkpoints/
+results.zip
+
+# Jupyter Notebook Checkpoints
 *.ipynb_checkpoints
+
+# OS & IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

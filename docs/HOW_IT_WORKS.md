@@ -240,7 +240,28 @@ optimistic.
 
 ---
 
-## 9. Frequently asked questions
+## 9. Token-Level Saliency Heatmap & Pragmatic KPIs
+
+### 9.1 Saliency & Attention Synthesis
+To understand *why* an expression is flagged as sarcastic, IronyLens extracts token-level attribution by synthesizing three signals:
+1. **BiLSTM Self-Attention Pooling:** The attention weights $\alpha_t \in [0, 1]$ directly reflect the recurrent network's sequential focus when building the post summary vector.
+2. **Linear SVM Feature Impact:** Feature weights $\beta_i \cdot \text{TF-IDF}(i)$ quantify whether a token or n-gram pushed the decision toward the sarcastic or literal class.
+3. **Lexical Polarity Categorization:** Tokens are categorized into functional linguistic roles:
+   - **Positive Valence (Inverted):** Overt positive words contradicted by context (*great*, *love*, *genius*, *brilliant*).
+   - **Situational Friction Targets:** The frustrating topic entity creating pragmatic dissonance (*meeting*, *email*, *delay*, *traffic*).
+   - **Modal Intensifiers:** Amplifiers and sarcastic boosters (*definitely*, *totally*, *obviously*, *truly*).
+   - **Discourse Markers:** Irony signposts (*oh*, *another*, *sure*, *thanks*).
+   - **Syntactic Carriers:** Grammatical stop words (*the*, *a*, *that*, *been*, *could*) which are dampened to background baseline ($0.05 - 0.18$).
+
+### 9.2 Lossless Pragmatic KPIs
+- **Valence Inversion Index ($0 - 10$):** Measures the semantic gap between literal positive vocabulary and negative contextual reality.
+- **Pragmatic Gap ($\Delta$):** Quantifies semantic incongruity between overt semantics and inferred speaker intent.
+- **Hyperbole Index ($0 - 10$):** Detects stylistic intensity using capitalization runs, punctuation clusters (`!`, `?!`), and character elongations (`soooo`).
+- **Consensus Engine:** Simultaneously queries Twitter-RoBERTa (P1), BiLSTM Attention (P2), and Linear SVM (P3) to display model alignment.
+
+---
+
+## 10. Frequently asked questions
 
 **Q: Why not just use a sentiment analyser?**
 Sarcastic posts usually *look* positive. A sentiment model labels "I love Mondays 🙄" as

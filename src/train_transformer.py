@@ -72,8 +72,10 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
     def to_dataset(df):
-        df = df.assign(text=[clean_text(t, demojize=False) for t in df["text"]]).reset_index(drop=True)
-        ds = Dataset.from_pandas(df[["text", "context", "label"]])
+        texts = [clean_text(t, demojize=False) for t in df["text"]]
+        contexts = df["context"].fillna("").astype(str).tolist()
+        labels = df["label"].astype(int).tolist()
+        ds = Dataset.from_dict({"text": texts, "context": contexts, "labels": labels})
 
         def tokenize(batch):
             if args.use_context:
@@ -82,7 +84,7 @@ def main():
                 return tokenizer(batch["text"], batch["context"], truncation="longest_first", max_length=args.max_len)
             return tokenizer(batch["text"], truncation=True, max_length=args.max_len)
 
-        return ds.map(tokenize, batched=True, remove_columns=["text", "context"]).rename_column("label", "labels")
+        return ds.map(tokenize, batched=True, remove_columns=["text", "context"])
 
     train_ds, val_ds, test_ds = to_dataset(train), to_dataset(data["val"]), to_dataset(data["test"])
 

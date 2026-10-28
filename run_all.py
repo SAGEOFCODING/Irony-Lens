@@ -32,7 +32,8 @@ def main():
     if args.transformer:
         step("src.train_transformer", *ds, *(["--use-context"] if args.use_context else []))
     step("src.compare", *ds)
-    print("\nDone. Start the demo with:  streamlit run app.py")
+    print("\nDone! Launch the futuristic telemetry workbench with:  python server.py")
+    print("Or launch the exploratory research dashboard with:    streamlit run app.py")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,8 @@
-# Data + classical ML (enough for the baseline, EDA and the demo)
+# Web interfaces & Dashboards
+streamlit>=1.46
+flask>=3.0
+
+# Data + Classical ML (Baseline & EDA)
 pandas>=2.2
 numpy>=1.26
 scikit-learn>=1.5
@@ -6,9 +10,8 @@ matplotlib>=3.8
 tabulate>=0.9
 emoji>=2.10
 joblib>=1.4
-streamlit>=1.46
 
-# Deep learning (BiLSTM + transformer)
+# Deep Learning (BiLSTM + Transformer)
 torch>=2.4
 transformers>=4.46
 datasets>=2.20
