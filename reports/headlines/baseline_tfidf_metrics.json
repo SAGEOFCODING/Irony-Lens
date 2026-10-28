@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.8748,
+  "precision_sarcastic": 0.8591,
+  "recall_sarcastic": 0.8813,
+  "f1_sarcastic": 0.87,
+  "f1_macro": 0.8746,
+  "roc_auc": 0.944,
+  "model": "baseline_tfidf",
+  "dataset": "headlines",
+  "classifier": "linear_svm",
+  "params": {
+    "C": 0.2
+  }
+}

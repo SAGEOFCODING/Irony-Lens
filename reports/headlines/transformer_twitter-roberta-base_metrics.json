@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9379,
+  "precision_sarcastic": 0.9595,
+  "recall_sarcastic": 0.9078,
+  "f1_sarcastic": 0.9329,
+  "f1_macro": 0.9376,
+  "roc_auc": 0.9857,
+  "model": "transformer_twitter-roberta-base",
+  "dataset": "headlines",
+  "base_model": "cardiffnlp/twitter-roberta-base",
+  "use_context": false,
+  "train_rows": 22801
+}

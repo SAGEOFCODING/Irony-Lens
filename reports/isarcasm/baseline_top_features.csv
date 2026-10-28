@@ -1,0 +1,41 @@
+feature,weight,indicates
+word__user do,1.2097748694573818,sarcastic
+word__love when,1.1798941200510351,sarcastic
+word__it when,1.156309283506008,sarcastic
+word__you so,1.0951318027561359,sarcastic
+word__30,1.053570992976251,sarcastic
+word__hasn,1.0023579116064838,sarcastic
+word__an,0.9895872476785657,sarcastic
+word__thanks user,0.9817412099303539,sarcastic
+word__oh,0.98091386302114,sarcastic
+word__birthday to,0.9707923084133108,sarcastic
+word__poor,0.9530160911139184,sarcastic
+word__evening,0.9217663229965822,sarcastic
+word__ve already,0.9066245987912012,sarcastic
+word__your girl,0.9050867341995483,sarcastic
+word__user you,0.9040079007390457,sarcastic
+word__date,0.8905806939897217,sarcastic
+char__ x ,0.8882712591107872,sarcastic
+word__you know,0.8843479510078361,sarcastic
+word__done with,0.8803713268944656,sarcastic
+char__ x,0.8784276973496388,sarcastic
+word__http,-1.0393076388560876,not sarcastic
+word__worse,-0.952761211679021,not sarcastic
+word__user this,-0.8648428413513024,not sarcastic
+word__think about,-0.8378286713416134,not sarcastic
+word__cat,-0.8101355719631118,not sarcastic
+word__your day,-0.7585646473171292,not sarcastic
+word__god,-0.7583689549981852,not sarcastic
+word__is great,-0.7476740751606265,not sarcastic
+word__classes,-0.7436864744544807,not sarcastic
+word__it out,-0.7345785632356447,not sarcastic
+word__parents,-0.7276604340812586,not sarcastic
+word__know it,-0.7237884228762775,not sarcastic
+word__since,-0.7173643825832703,not sarcastic
+word__running,-0.7173460134832848,not sarcastic
+word__them,-0.7168549127352452,not sarcastic
+word__am so,-0.709528840670388,not sarcastic
+word__off the,-0.709220662755738,not sarcastic
+word__breakdown,-0.7050754115899174,not sarcastic
+word__love talking,-0.6784827505403492,not sarcastic
+word__are not,-0.6768502530427459,not sarcastic

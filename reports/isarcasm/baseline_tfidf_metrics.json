@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.7138,
+  "precision_sarcastic": 0.2149,
+  "recall_sarcastic": 0.375,
+  "f1_sarcastic": 0.2732,
+  "f1_macro": 0.5475,
+  "roc_auc": 0.6023,
+  "model": "baseline_tfidf",
+  "dataset": "isarcasm",
+  "classifier": "linear_svm",
+  "params": {
+    "C": 1.0
+  }
+}

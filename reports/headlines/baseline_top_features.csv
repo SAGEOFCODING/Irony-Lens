@@ -1,0 +1,41 @@
+feature,weight,indicates
+word__nation,2.17919092698806,sarcastic
+word__area,1.6940868505606332,sarcastic
+word__man,1.2859066041486933,sarcastic
+word__of,1.1678300691945072,sarcastic
+word__he,1.0626941660649871,sarcastic
+char__ed ,0.9910836906919591,sarcastic
+char__ly ,0.9827773980435558,sarcastic
+word__they,0.9811780068080815,sarcastic
+word__guy,0.9011560570241591,sarcastic
+word__are they,0.8880389970991555,sarcastic
+word__few,0.8834405607319259,sarcastic
+word__local,0.8783168891940863,sarcastic
+"char__,' ",0.8691063608923216,sarcastic
+"char__,'",0.8691063608923216,sarcastic
+word__onion,0.8574237603300566,sarcastic
+char__port:,0.8496790592492094,sarcastic
+char__ort:,0.8465322200292333,sarcastic
+char__ort: ,0.8465322200292333,sarcastic
+word__all the,0.8430697862474387,sarcastic
+word__shit,0.8374763250810602,sarcastic
+char__ a ,-3.7319417077935086,not sarcastic
+word__the,-2.4929020451614097,not sarcastic
+char__a ,-2.4401377384678606,not sarcastic
+word__and,-1.822255267524814,not sarcastic
+word__is,-1.756491626875833,not sarcastic
+word__an,-1.477099801447802,not sarcastic
+word__are,-1.41087725599172,not sarcastic
+char__ the ,-1.4055163401628552,not sarcastic
+char__? ,-1.3724343378082478,not sarcastic
+char__: ,-1.3530857192779855,not sarcastic
+char__ a,-1.3218020714851662,not sarcastic
+word__how,-1.219367498655177,not sarcastic
+char__the ,-1.2065144882453533,not sarcastic
+"char__, ",-1.105858099867649,not sarcastic
+char__is ,-1.0776594672003577,not sarcastic
+char__ i ,-1.0459464389468398,not sarcastic
+word__why,-1.0166275687505997,not sarcastic
+char__ the,-1.010912096888753,not sarcastic
+word__her,-1.0056454311831888,not sarcastic
+char__. ,-0.9794097865949271,not sarcastic
